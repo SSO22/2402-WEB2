@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    시멘틱 : 의미가 부여되는 태그
+    시멘틱 태그 종류
+    <header>
+        웹문서의 머릿글
+        페이지의 상단 부분
+        홈이나 네비게이션이 포함됨
+    </header>
+
+    <footer>
+        웹문서의 바닥글
+        페이지의 하단부분
+        연락처, 사이트맵 등의 다양한정보가 들어간다
+    </footer>
+
+    <main>
+        메인 내용을 담는 태그
+        문서에 한번만 나옴(중요한 내용)
+        바디의 자식으로
+        의미론적으로 봤을때 최상단에 배치 해야 함.
+        예를 들어
+        <header>
+            <main></main>
+        </header>
+    -->이런거 안됨.
+    </main>
+
+    <section>
+        켄텐츠의 그룹을 분리하는 태그
+        단락별로 섹션을 나눠서 사용-> 제목태그가 하나 이상 포함 되어야한다. (섹션이많이 나눠지면 구분하기 힘들기때문에-경고등이 켜짐)
+    </section>
+
+    <nav>
+        웹페이지의 메뉴등 링크들이 들어가는 태그
+        의미를 부여하기 위해서 ul태그를 감싸는 경우도 많다
+
+        <nav>
+            <ul>
+                <li class="a"></li>
+                <li class="a"></li>
+                <li class="a"></li>
+                <li class="a"></li>
+            </ul>
+        </nav>
+        구조론적으로 봤을때는
+        nav와 ul이 박스 역할을 하기때문에 무의미한 중첩구조일수있지만
+        의미론적으로는 유효한 작성이다.
+
+    </nav>
+
+    <article>
+        섹션안에 들어가는 하나의 컨텐츠.
+        <article>은 컨텐츠 하나하나를 나누기에 적합
+            section > article
+            article > section
+
+            둘다 작성 가능한 구조
+        </article>
+
+    <aside>
+        본문내용과 관련이 없는 내용을 배치하는 태그
+        광고, 
+    </aside>
+    
+</body>
+</html>
