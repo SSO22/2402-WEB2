@@ -18,9 +18,12 @@
             justify-content: space-between;
             margin-bottom: 10px;
             overflow: hidden;
+            box-sizing: border-box;
             
-            
-             
+        }
+        section {
+            flex-direction: row;
+            justify-content: space-between;
         }
         h1 {
             width: 200px;
@@ -28,38 +31,39 @@
             font-weight: bold;
             text-align: center;
             padding: 25px;
-            /* justify-content: center; */
-            
         }
         nav {
-            
+            width: 300px;
+            height: 100px;
             display: inline-block;
             text-decoration: none; 
-            padding: 10px;
+            /* padding: 10px; */
             background-color: antiquewhite;
-            flex-direction: column;
-           
+            position: relative;
+            
         }
         ul {
             font-size: 14px;
             list-style: none;
-            
             display: flex;
-            justify-content: space-between;
-            
             
         }
         
         .menu-1 {
             background-color: greenyellow;
-            margin: 0;
+            
             padding: 4px;
-          
+            color: black;
+            justify-content: space-between;
+            
         }
         .menu-2 {
             background-color: orange;
-            margin: 0;
+            
             padding: 4px;
+            color: black;
+            justify-content: space-between;
+            
             
         }
         .menu-1 a {
@@ -79,11 +83,24 @@
             background-color: antiquewhite;
         }
         aside {
-            width: 25%;
-            display: inline-block;
-            flex-direction: column;
-            margin-right: 0;
+            width: 20%;
             border: 1px solid black;
+            padding: 20px;
+        }
+        .aside-banner {
+            background-color: gray;
+            margin-top: 10px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        footer {
+            border: 1px solid black;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-align: center;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -91,7 +108,6 @@
     <header>
         
         <h1>WEB-logo</h1>
-        
         <nav class="menu">
             <ul class="menu-1">
                 <a href="#">
@@ -123,52 +139,53 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <article class="main-article">
-            <h2>
-            Main Article
-            </h2>
-             
-             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
-            </p> 
-         </article>
-         <article class="main-article">
-            <h2>
-            Main Article
-            </h2>
-             
-             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
-            </p> 
-         </article>
-         <article class="main-article">
-            <h2>
-            Main Article
-            </h2>
-             
-             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
-            </p> 
-         </article>
-        
-    </main>
-       
+    <section>
+        <main>
+            <article class="main-article">
+                <h2>
+                Main Article
+                </h2>
+                 
+                 <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
+                </p> 
+             </article>
+             <article class="main-article">
+                <h2>
+                Main Article
+                </h2>
+                 
+                 <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
+                </p> 
+             </article>
+             <article class="main-article">
+                <h2>
+                Main Article
+                </h2>
+                 
+                 <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam aperiam id odit, officiis praesentium, maiores quam accusantium magni nemo reiciendis consectetur nisi, esse alias! Laudantium eos inventore molestias dolore.
+                </p> 
+             </article>
+        </main>
+           
+        <aside>
+            <h3>Right aside</h3>
+            <P>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas nesciunt facere sed rem! Maxime dolorem alias est consequuntur <br> maiores molestias voluptatum tenetur eius, <br>placeat nihil atque a blanditiis nisi nobis.
+            </P>
+            <input type="mailto">
+            <button >mailto</button>
+            <div class="aside-banner">
+                <h3>TEXT</h3>
+                <P>banner</P>
+            </div>
+        </aside>
+    </section>
    
-    <aside>
-        <h3>Right aside</h3>
-        <P>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas nesciunt facere sed rem! Maxime dolorem alias est consequuntur <br> maiores molestias voluptatum tenetur eius, <br>placeat nihil atque a blanditiis nisi nobis.
-        </P>
-        <input type="mailto">
-        <button>mailto</button>
-        <div class="aside-banner">
-            <h3>TEXT</h3>
-            <P>banner</P>
-        </div>
-    </aside>
     <footer>
-        &copy;HTML5 COPYRIGHT
+        HTML5 COPYRIGHT
     </footer>
 </body>
 </html>
