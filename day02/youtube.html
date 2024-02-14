@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .test-box {
+            width: 100px;
+            height: 0;
+            /* 부모태그 width에 영향을 받기 때문에 이컨텐츠는 body의 영향을 받는다 */
+            padding-top: 10%;
+            background-color: pink;
+        }
+        .content {
+            width: 50%;
+        }
+
+        .video-container {
+            padding-top: 56.25%;
+            position: relative;
+
+        }
+
+        .padding-box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+        .test-box2 {
+            width: 500px;
+            background-color: pink;
+            aspect-ratio: 16/9;
+            /* 화면비를 직접사용 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 반응형 영상 만들기 -->
+    <div class="content">
+        <div class="video-container">
+            <iframe class="padding-box" src="https://www.youtube.com/embed/5napTMkCHs0" title="기생수 한방 몰아보기[애니메이션리뷰/결말포함]기생수 더그레이 예습" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <iframe class="aspect-box" src="https://www.youtube.com/embed/5napTMkCHs0" title="기생수 한방 몰아보기[애니메이션리뷰/결말포함]기생수 더그레이 예습" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+
+    <div class="test-box"></div>
+    <div class="test-box2"></div>
+</body>
+</html>                
