@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- 텍스트를 입력하는 기본적인 인풋 -->
+        <input type="text" name="아이디" id="">
+        <!-- 보안을 위해 입력문자가 *표시로 됨 -->
+        <input type="password" name="패스워드" id="">
+        <!-- 항목체크 -->
+        <input type="checkbox" name="" id="">
+        
+        <!-- 라디오버튼 :하나가 계속 선택되어있는것. id를 for와 같이 맞춰주면 글자를 클릭해도 선택이 됨-->
+        <label for="very-no">매우아니다</label>
+        <input type="radio" name="my-radio" value="매우아니다" id="very-no">
+
+        <label for="no">아니다</label>
+        <input type="radio" name="my-radio" value="아니다" id="no">
+
+        <label for="yes">그렇다</label>
+        <input type="radio" name="my-radio" value="그렇다" id="yes">
+
+        <label for="very-yes">매우그렇다</label>
+        <input type="radio" name="my-radio" value="매우그렇다" id="very-yes">
+
+        
+        <button type="submit">로그인</button>
+        <input type="submit" value="로그인">
+        <!-- 인풋태그는 내가원하는 디자인으로 바꿀수가 없어서 버튼태그으로 쓰임. (제한적임)
+             - 기능은 똑같음!! 기본요소이고 보완성이 취약해서 안쓰는 경우가 많음.-->
+    </form>
+</body>
+</html>
