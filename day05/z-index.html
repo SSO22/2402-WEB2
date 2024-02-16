@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            width: 60%;
+            aspect-ratio: 1;
+            background-color: pink;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            
+            z-index: 100;
+            /* z축 :입체적으로 가까이 있는곳. 값이 높을수록 위로 올라옴 */
+            /* 값은 1~100은 결과는 같으나 큰수로 줘야 사이에 다른 컨테츠가 들어가기가 관리하기 편함 */
+            /* 일반적으로 최상위 값으로 999를 쓴다. */
+        }
+        .box2 {
+            width: 60%;
+            aspect-ratio: 1;
+            background-color: aqua;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            z-index: 10;
+        }
+        .box3 {
+            width: 60%;
+            aspect-ratio: 1;
+            background-color: blueviolet;
+            position: absolute;
+            right: 150px;
+            bottom: 150px;
+            
+            z-index: 50;
+        }
+    </style>
+</head>
+<body>
+    <!-- z-index는 position의 부수속성이다.  -->
+    <!-- 또, top,left등과 같이 position의 부수 속성들이 static(기본값) 상태인 컨텐츠한테는 속성 적용이 안된다!! 주의!! -->
+    <div class="box1">1번박스</div>
+    <div class="box2">2번박스</div>
+    <div class="box3">3번박스</div>
+</body>
+</html>

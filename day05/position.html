@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            
+            position:static ;
+            top: 400px;
+        }
+        .rel-box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            
+            position: relative;
+            top: 500px;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid#222;
+            position: relative;
+        }
+        .absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            
+            position: absolute;
+            top: 50px;
+            left: 100px;
+
+        }
+        .fix-box {
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+        body {
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">안녕하세요</div>
+    <!-- static : 기본값 -->
+    <!-- 컨텐츠를 포지션으로 배치하려면 top.left로 이용하게 되는데 static은 영향을 받지 않음 -->
+    
+    <div class="rel-box">relative</div>
+    <!-- relative : (관계,상대적인)포지션 속성들의 영향을 받으면서 문서의 흐름을  -->
+    <!-- 따르는 컨텐츠를 만들때 사용. 위치를 바꾸더라도 다른애들은 영향을 받지않고 본인만 위치가 바뀜. -->
+    <!-- 많이 안씀임.. -->
+    
+    <div class="container">
+        <div class="absolute-box">앱솔루트</div>
+    <!-- absolute : 문서의 흐름에서 벗어나 절대좌표에 고정되는 컨텐츠를 만들때 사용 -->
+    <!-- 조상요소중 처음으로 만나는 position 속성을 가진 컨텐츠를 기준으로 정렬- 부모요소에 포지션 속성이있어야 움직이고  -->
+    <!-- 그렇지 않으면 기본값(body기준)으로 정렬됨.(지금은 맨위에 static-box의 기준으로 정렬) -->
+    <!-- 여러개의 컨텐츠를 겹쳐야할때 씀.(유투브영상 하단에 버튼들..배치할때사용) 흐름에 따르지 않음 -->
+    </div>
+    
+    <div class="fix-box">fixed</div>
+    <!-- fixed : 무조건 브라우져 기준 절대좌표 고정!!-->
+    
+    <!-- sticky : 특정영역에선 fixed처럼 작동하고, 영역밖에선 relative처럼(일반적인) 작동한다-->
+</body>
+</html>
