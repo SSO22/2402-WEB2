@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            width: fit-content;
+            border: 1px solid #222;
+
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 16px;
+
+            transform: rotate(45deg);
+        }
+        .width-box:hover {
+            width: 400px;
+            /* 감싸고 있는 부모컨텐츠도 같이 늘어남 */
+        }
+        .scale-box:hover {
+            transform: scaleX(2); 
+            /* 가운데 중심으로 가로 양방향으로 2배 커짐. */
+            /* 원본은 그대로있고 보이는것만 늘어남..
+            글자도 늘어남-보이는것만 늘어남 감싸는 부모는 변함 없고 본인만 커짐.. */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="width-box">
+            안녕하세요(width)
+        </div>
+        <div class="scale-box">
+            안녕하세요(scale)
+        </div>
+    </section>
+    
+</body>
+</html>
