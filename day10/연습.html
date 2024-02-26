@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 0 32PX;
+            
+        }
+     
+        .container {
+            max-width: 1200PX;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: pink;
+            
+        }
+       .contents-container {
+           
+            display: flex;
+            padding: 50px 0;
+            gap: 16px;
+           
+       }
+       .contents {
+            
+            background-color: brown;
+            padding: 16px;
+            display: flex;
+            gap: 16px;
+            height: 200px;
+            box-sizing: border-box;
+            
+       }
+       .temp-img {
+            height: 100%;
+            aspect-ratio: 1;
+            background-color: aliceblue;
+            
+       }
+       .contents-ex {
+            overflow: hidden;
+       }
+
+       
+        @media screen and (max-width:799px) {
+            section {
+                padding: 0 16px;
+            }
+            .contents-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+       <div class="container">
+        <ul class="contents-container">
+            <li class="contents">
+                <div class="temp-img"></div>
+                <div class="contents-ex">
+                    <h2>제목</h2>
+                    <h3>소제목</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam, accusantium consequuntur eligendi commodi corrupti inventore quas quod architecto beatae, earum ratione minima rem ducimus neque debitis? Recusandae, modi nostrum!</p>
+                </div>
+            </li>
+            <li class="contents">
+                <div class="temp-img"></div>
+                <div class="contents-ex">
+                    <h2>제목</h2>
+                    <h3>소제목</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam, accusantium consequuntur eligendi commodi corrupti inventore quas quod architecto beatae, earum ratione minima rem ducimus neque debitis? Recusandae, modi nostrum!</p>
+                </div>
+            </li>
+        </ul>
+       </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 0 32PX;
+            background-color: pink;
+        }
+        section.full-screen-section {
+            padding: 0;
+        }
+        .full-screen-section > .section-container {
+            max-width: none;
+        }
+        .section-container {
+            max-width: 1280PX;
+            /* MAX-WIDTH :가로로 어디까지 늘어날건지 정해줌 */
+            /* width는 100%(기본값) */
+            margin: 0 auto;
+            background-color: orange;
+
+            height: 500px;
+            /* 원래주면안되는데 임시로 줌.. */
+        }
+        /* 799px보다 작아지면 모바일로 */
+        @media screen and (max-width:799px) {
+            section {
+                padding: 0 16px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>헤더</header>
+    <section class="full-screen-section">
+        <div class="section-container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At consectetur alias, asperiores cum ab sequi dignissimos. Id nobis aspernatur dignissimos sint magni non amet modi quam dolorem neque, similique ratione.
+        </div>
+    </section>
+    <section>
+        <div class="section-container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At consectetur alias, asperiores cum ab sequi dignissimos. Id nobis aspernatur dignissimos sint magni non amet modi quam dolorem neque, similique ratione.
+        </div>
+    </section>
+    <footer>푸터</footer>
+</body>
+</html>
