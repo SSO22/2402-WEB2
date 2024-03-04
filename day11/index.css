@@ -6,6 +6,13 @@ header {
     height: 64px;
 
 }
+img {
+    width: 100%;
+    display: block;
+}
+button {
+    cursor: pointer;
+}
 .header-container {
     max-width: 1160px;
     height: 100%;
@@ -126,6 +133,7 @@ section {
     height: 260px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    margin: 0 auto;
 }
 .help-content:hover{
     background-color: #eee;
@@ -181,6 +189,146 @@ section {
 .help-content-diff {
     width: 260px;
 }
+footer {
+    background-color: #121315;
+    overflow: hidden;
+    
+}
+.footer-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.footer-more {
+    text-align: center;
+    padding: 48px;
+}
+.footer-more > button {
+    background-color: #3ba55c;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer-devices > img {
+    height: 150px;
+    width: auto;
+    margin: 0 auto;
+
+}
+.footer-devices {
+    position: relative;
+    border-bottom: 1px solid#353535;
+    width: 1000px;
+}
+.icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+}
+.icons img {
+    height: 56px;
+    /* 높이값 초기화. */
+    opacity: 0.5;
+
+    transition: 0.2s;
+    /* 애니메이션 효과 */
+    position: absolute;
+    top: 65px;
+    width: auto;
+}
+.icon-browsers {
+    left: 180px;
+
+}
+.icon-android {
+    left: 470px;
+}
+.icons img:hover{
+    opacity: 1;
+}
+.icon-apple {
+    left: 560px
+}
+.icon-window {
+    left: 680px;
+}
+.icon-mac {
+    left: 780px
+}
+.footer-logo-container {
+    width: 150px;
+}
+.footer-nav-container {
+    display: flex;
+    gap: 200px;
+    padding: 32px 32px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+#more-help {
+    padding-bottom: 200px;
+}
+.footer-nav {
+    display: flex;
+    flex-grow: 1;
+    /* 너비를 키워줄때 쓰는 속성 부모에게 쓰고 
+    자식에게 width:100% */
+}
+.footer-nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+.footer-nav-sign {
+    color: #666;
+    font-size: 12px;
+}
+.footer-nav-ex {
+    color: green;
+    font-size: 14px;
+}
+#help {
+    position: fixed;
+    bottom: 16px;
+    right: 8px;
+    padding: 0;
+
+}
+#help > button {
+    background-color: var(--main-color);
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    
+    gap: 6px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 @media screen and (max-width:799px) {
     .hamberger-button {
         display: block;
