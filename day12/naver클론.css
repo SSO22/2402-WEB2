@@ -1,0 +1,29 @@
+img {
+    display: block;
+    width: 100%;
+}
+
+.hide-text {
+    /* 이미지&텍스트를 숨기는 요소! 자리차지 하지않음. 아래는 복붙해서 쓰기! */
+    /* rect :원하는 영역의 사각형을 만들어주는 요소 */
+    /* 기준점이 왼쪽 상단끝에서 부터 시작해서 어디까지 보여줄것인지(시계방향으로) */
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+.logo-img {
+    background: url('img/spr_intro.png') no-repeat 0 -98px;
+	width: 78px;
+	height: 29px;
+    display: block;
+    /* 이미지는 기본속성이 인라인블록이다.그러면 베이스라인이 생기므로(여백) 디스플레이 블록처리로 초기화해서쓰자 */
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: ;
+}
