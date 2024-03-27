@@ -75,23 +75,23 @@ img {
 }
 
 #main-container{
-    /* max-width: 1200px; */
-    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 250, 224);
-    min-width: 1000px;
+    min-width: 600px;
+    min-height: 300px;
     
 }
 .main-text-container{
-    width: 700px;
-    padding: 0 56px;
+    min-width: 600px;
+    padding: 0 20px 0 60px ;
 }
 
 .main-img{
-    width: 500px;
+    min-width: 600px;
+    margin-right: 100px;
 }
 .main-contents > h2{
 
@@ -106,16 +106,28 @@ img {
     line-height: 30px;
     margin-bottom: 30px;
 }
-
+.orang-button {
+    display: flex;
+    gap: 20px;
+}
+.orang-button > a{
+    display: flex;
+    text-decoration: none;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+}
 .icon-google-play{
     width: 20px;
     height: 20px;
+    margin-top: 5px;
 }
 .icon-apple-store{
     width: 20px;
     height: 20px;
+    margin-top: 4px;
 }
-.orang-button{
+.google{
     width: 180px;
     height: 56px;
     border-radius: 10px;
@@ -123,14 +135,21 @@ img {
     box-sizing: border-box;
     padding: 14px 2rem;
     display: inline-block;
-    /* vertical-align: middle; */
-    /* text-align: center;
-    text-decoration: none; */
+    
 }
-.orang-button > a {
-    text-decoration: none;
-    text-align: center;
-    /* vertical-align: middle; */
-    color: white;
-    font-weight: bold;
+.app{
+    width: 180px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #FF6F0F;
+    box-sizing: border-box;
+    padding: 14px 2rem;
+    display: inline-block;
+    
 }
+
+.download-button {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
