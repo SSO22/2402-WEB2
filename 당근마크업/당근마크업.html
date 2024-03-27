@@ -4,79 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        
-        .hide-text {
-            position: absolute;
-            clip: rect(1px, 1px, 1px, 1px);
-            clip-path: inset(0 0 99.9% 99.9%);
-            overflow: hidden;
-            height: 1px;
-            width: 1px;
-        }
-        .header-container {
-            display: flex;
-            margin: 0 auto;
-            max-width: 1200px;
-            padding: 18px 30px;
-            justify-content: space-between;
-            min-width: 1000px;
-        }
-        .nav-container{
-            display: flex;
-            
-            font-size: 18px;
-            vertical-align: baseline;
-            
-        }
-        .logo-img {
-            padding: 0 30px;
-        }
-        .nav-contents {
-            display: flex;
-            list-style: none;
-            padding-top: 2px;
-            gap: 20px;
-            
-        }
-        .nav-list-contents {
-            text-decoration: none;
-            color: #444;
-            
-        }
-        .search-container {
-            display: flex;
-            
-        }
-        .serch {
-            width: 250px;
-            height: 35px ;
-            font-size: 16px;
-            padding: 3px 20px ;
-            border: none;
-            border-radius: 4px;
-            background-color: #ececec;
-        }
-        .chatting-button-contents {
-            width: 100px;
-            height: 40px;
-            font-size: 16px;
-            margin-left: 12px;
-            background-color: transparent;
-            border-radius: 4px;
-            border: 1px solid #888;
-        }
-        .chatting-button {
-            text-decoration: none;
-            font-weight: bold;
-            padding: 3px 10px ;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="당근마크업.css">
 </head>
 <body>
     <header>
@@ -117,11 +46,11 @@
                 </div>
                 <div class="orang-button">
                     <a href="#" class="google">
-                        <img class="fixed-google-play" alt="Google Play" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/google-play-white-0531cab5dbe15262e226cfb4acebeb316708ae0034d50b86ad4d809a03b6f5f0.svg">
+                        <img class="icon-google-play" alt="Google Play" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/google-play-white-0531cab5dbe15262e226cfb4acebeb316708ae0034d50b86ad4d809a03b6f5f0.svg">
                         <div class="download-button">Google </div>
                     </a>
                     <a href="#" class="app">
-                        <img class="fixed-apple-store" alt="App Store" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/apple-store-white-9ebb10b431c549dd19f032f70e6762df307939b5add030265d9c2dea888b2d03.svg">
+                        <img class="icon-apple-store" alt="App Store" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/apple-store-white-9ebb10b431c549dd19f032f70e6762df307939b5add030265d9c2dea888b2d03.svg">
                         <div class="download-button">App Store</div>
                     </a>
                 </div>

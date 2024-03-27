@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+.hide-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 18px 30px;
+    justify-content: space-between;
+    min-width: 1000px;
+}
+.nav-container{
+    display: flex;
+    
+    font-size: 18px;
+    vertical-align: baseline;
+    
+}
+.logo-img {
+    padding: 0 30px;
+}
+.nav-contents {
+    display: flex;
+    list-style: none;
+    padding-top: 4px;
+    gap: 15px;
+    
+}
+.nav-list-contents {
+    text-decoration: none;
+    color: #444;
+    
+}
+.search-container {
+    display: flex;
+    
+}
+.serch {
+    width: 250px;
+    height: 35px ;
+    font-size: 16px;
+    padding: 3px 20px ;
+    border: none;
+    border-radius: 4px;
+    background-color: #ececec;
+}
+.chatting-button-contents {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 12px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #888;
+}
+.chatting-button {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 10px ;
+}
+
+#main-container{
+    /* max-width: 1200px; */
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 250, 224);
+    min-width: 1000px;
+    
+}
+.main-text-container{
+    width: 700px;
+    padding: 0 56px;
+}
+
+.main-img{
+    width: 500px;
+}
+.main-contents > h2{
+
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 60px;
+}
+.main-contents > p {
+    font-size: 20px;
+    padding-top: 50px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-google-play{
+    width: 20px;
+    height: 20px;
+}
+.icon-apple-store{
+    width: 20px;
+    height: 20px;
+}
+.orang-button{
+    width: 180px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #FF6F0F;
+    box-sizing: border-box;
+    padding: 14px 2rem;
+    display: inline-block;
+    /* vertical-align: middle; */
+    /* text-align: center;
+    text-decoration: none; */
+}
+.orang-button > a {
+    text-decoration: none;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: white;
+    font-weight: bold;
+}
