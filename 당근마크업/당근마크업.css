@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+header {
+    height: 60px;
+}
 img {
     display: block;
     width: 100%;
@@ -16,27 +19,43 @@ img {
     width: 1px;
 }
 .header-container {
-    display: flex;
-    margin: 0 auto;
+    position: fixed;
     max-width: 1200px;
-    padding: 18px 30px;
-    justify-content: space-between;
-    min-width: 1000px;
-}
-.nav-container{
+    margin: 0 auto;
+    background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1400px;
     
+    padding: 10px 12px;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 999;
+    
+}
+.header-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 18px;
     vertical-align: baseline;
 }
 .logo-img {
+    display: flex;
     padding: 0 30px;
 }
 .nav-contents {
     display: flex;
     list-style: none;
     padding-top: 4px;
-    gap: 15px;
+    gap: 10px;
+    margin-right: 50px;
 }
 .nav-list-contents {
     text-decoration: none;
@@ -69,6 +88,20 @@ img {
     font-weight: bold;
     padding: 3px 10px ;
     
+}
+.hamberger-button {
+    background-color: transparent ;
+    border: none;
+    color: #222;
+
+    display: none;
+}
+.search-icon {
+    display: none;
+    top: 25%;
+    left: 12px;
+    transform: translateY(12%);
+    margin-right: 15px;
 }
 #main-container {
     width: 100%;
@@ -128,10 +161,6 @@ img {
     box-sizing: border-box;
     padding: 14px 0 0 28px;
     display: inline-block;
-    /* color: white;
-    text-decoration: none;
-    font-weight: bold; */
-    
 }
 .app{
     width: 180px;
@@ -141,9 +170,6 @@ img {
     box-sizing: border-box;
     padding: 14px 2rem;
     display: inline-block;
-    /* color: white;
-    text-decoration: none;
-    font-weight: bold; */
 }
 .download-button {
     margin-left: 10px;
@@ -169,8 +195,6 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0 60px;
-    
-    
 }
 #third-section-container {
     width: 100%;
@@ -183,7 +207,6 @@ img {
     padding: 0 60px;
     gap: 100px;
 }
-
 #fourth-section-container {
     width: 100%;
     height: 690px;
@@ -194,14 +217,12 @@ img {
     align-items: center;
     padding: 0 60px;
 }
-
 .main-title {
-    width: 500px;
+    width: 450px;
     height: 200px;
     margin-bottom: 200px;
     min-width: 600px;
 }
-
 .orange-title {
     font-size: 18px;
     font-weight: bold;
@@ -229,7 +250,6 @@ img {
     color: #222;
     display:flex;
     padding: 12px 2rem;
-    
     text-decoration: none;
     width: fit-content;
     background-color: #E9ECEF;
@@ -238,32 +258,12 @@ img {
 .info-button:hover {
     background-color: #dee2e6;
 }
-<<<<<<< HEAD
-
-=======
-#second-section-container {
-    width: 100%;
-    /* height: 100%; */
-    margin: 0 auto;
-    background-color: #FFF8F1;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 0 60px;
-    
-}
-/* .second-section-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 .text-space{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
->>>>>>> 69fa806afd3c5e7e441f5b31169b12235e3c1e9b
 .icon-story-list{
     display: flex;
     justify-content: flex-start;
@@ -285,10 +285,43 @@ img {
     line-height: 20px;
 }
 .section-img {
-    /* display: inline-block;
-    justify-content: center;
-    align-items: center; */
-    /* width: 600px; */
-    min-width: 600px;
+     min-width: 600px;
     max-width: 600px;
+}
+.footer-nav {
+    display: flex;
+    flex-grow: 1;
+    /* 너비를 키워줄때 쓰는 속성 부모에게 쓰고 
+    자식에게 width:100% */
+}
+.footer-nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+footer-container {
+
+}
+@media screen and (max-width:799px) {
+    .hamberger-button {
+        display: block;
+    }
+    .search-icon {
+        display: block;
+    }
+    .header-container ul {
+        display: none;
+    }
+    .search-container {
+        display: none;
+    }
 }
