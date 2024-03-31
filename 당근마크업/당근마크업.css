@@ -48,6 +48,7 @@ img {
 }
 .logo-img {
     display: flex;
+    
     padding: 0 30px;
 }
 .nav-contents {
