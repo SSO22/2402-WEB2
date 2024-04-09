@@ -443,6 +443,7 @@ nav {
     outline: 0;
     margin-bottom: 5px;
     margin-top: 5px;
+    padding: 10px;
 }
 .lang-select-nation {
     color: #888;
