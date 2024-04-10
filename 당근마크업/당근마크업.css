@@ -69,9 +69,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 60px 0 0;
-   
+    padding: 0 90px 0 0;
+    
 }
+
 .search-icon {
     border: none;
     background-color: transparent;
@@ -79,7 +80,7 @@ nav {
     transform: translateY(3%);
     margin-right: 10px;
     display: none;
-    
+    cursor: pointer;
 }
 .serch {
     width: 300px;
@@ -107,7 +108,7 @@ nav {
     background-color: transparent ;
     border: none;
     color: #222;
-    
+    cursor: pointer;
     display: none;
 }
 
