@@ -100,6 +100,7 @@ nav {
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid #d1d1d1;
+    cursor: pointer;
 }
 
 .hamberger-button {
@@ -368,7 +369,6 @@ nav {
     gap: 10px;
 }
 
-
 .hide-downroad {
     margin: 40px 0 0 0 ;
     padding-right: 40px;
@@ -383,12 +383,17 @@ nav {
 }
 .footer-app:hover {
     color: #999;
+    fill: #999
     
 }
 .footer-google:hover {
-    color: #999;
+    fill: #999;
     
 }
+/* .app-down-icon:hover {
+    color: #999;
+    fill: #999
+} */
 #company-information {
     display:grid;
     justify-content: space-between;
