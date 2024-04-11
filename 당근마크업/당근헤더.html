@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.hide-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+.icon-none{
+    display: none;
+}
+
+.search-icon{
+    width: 25px;
+}
+
+.logo-img {
+    background: url(./img/당근로고.svg);
+    display: block;
+    width: 65px;
+    height: 35px;
+
+    margin: 0 30px 0 0;
+}
+
+header {
+    padding: 0 16px;
+    height: 60px;
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.header-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    min-width: 300px;
+    display: flex;
+}
+
+
+.nav-content{
+
+    display: flex;
+    gap: 20px;
+    line-height: 5px;
+    flex-wrap: wrap;
+}
+
+
+.nav-content > a {
+    color: #484848;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+/* input에 직접적으로 크기를 설정해야 적용됨 */
+.search-container > input {
+    min-width: 300px;
+    height: 40px;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+    background-color: #ededed;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+.search-button-contents{
+    min-width: 65px;
+    padding: 8px 10px;
+
+    border: 1px solid #979797;
+    border-radius: 5px;
+    color: #222;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+    @media screen and (max-width:900px) {
+        .search-container > input{
+            display: none;
+        }
+
+        .search-icon{
+            display: block;
+        }
+        
+    }
+
+    @media screen and (max-width:680px) {
+
+        .nav-content{
+            display: none;
+        }
+
+        .search-button-contents{
+            display: none;
+        }
+
+        .list-icon{
+            display: block;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content-container">
+                    <h1>
+                        <a href="#">
+                            <span class="logo-img"></span>
+                            <span class="hide-text">당근마켓</span>
+                        </a>
+                    </h1>
+                <nav>
+                    <ul class="nav-container">
+                        <li class="nav-content">
+                            <a href="#">중고거래</a>
+                            <a href="#">동네업체</a>
+                            <a href="#">알바</a>
+                            <a href="#">부동산 직거래</a>
+                            <a href="#">중고차 직거래</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="물품이나 동네를 검색해보세요">
+                <a href="#" class="icon-none search-icon"><img src="./img/돋보기아이콘.svg" alt="돋보기"></a>
+                <a href="#" class="search-button-contents">채팅하기</a>
+                <a href="#" class="icon-none list-icon"><img src="/img/헤더 목록 아이콘.svg" alt="목록"></a>
+            </div>  
+        </div>
+    </header>
+</body>
+</html>

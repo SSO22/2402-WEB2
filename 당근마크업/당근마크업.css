@@ -4,7 +4,7 @@
     padding: 0;
 }
 header {
-    padding: 0 48px;
+    padding: 0 10px;
     height: 70px;
 
     position: fixed;
@@ -29,7 +29,8 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-   
+    box-sizing: border-box;
+    gap: 20px;
 }
 .hide-text {
     position: absolute;
@@ -39,50 +40,41 @@ a {
     height: 1px;
     width: 1px;
 }
-
 nav {
     display: flex;
     gap: 10px;
 }
-.header-container ul{
-    width: 700px;
+.nav-container{
+    /* width: 700px; */
     display: flex;
-    font-size: 18px;
-    font-weight: bold;
-    gap: 10px;
-    margin-left: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 30px;
 }
-.nav-container {
-    display: inline-block;
-}
+
 .nav-contents {
     display: flex;
     list-style: none;
     margin-right: 30px;
+    line-height: 20px;   
+    font-size: 18px;
+    font-weight: bold;
+    gap: 10px;
     
 }
-.nav-list-contents {
+.nav-container > a {
     text-decoration: none;
     color: #444;
 }
 .search-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 90px 0 0;
-    
+    padding: 0 10px 0 0;
 }
 
-.search-icon {
-    border: none;
-    background-color: transparent;
-    
-    transform: translateY(3%);
-    margin-right: 10px;
-    display: none;
-    cursor: pointer;
-}
-.serch {
+.search {
     width: 300px;
     height: 40px ;
     font-size: 16px;
@@ -90,26 +82,32 @@ nav {
     border: none;
     border-radius: 4px;
     background-color: #ececec;
+    
 }
-.chatting-button-contents {
+.search-icon {
+    width: 25px;
+    margin-right: 10px;
+    display: none;
+}
+.hambuger {
+    width: 25px;
+    margin-right: 16px;
+    display: none;
+}
+.chatting {
     width: 100px;
     height: 40px;
     font-size: 16px;
     margin-left: 12px;
     color: #444;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid #d1d1d1;
     cursor: pointer;
-}
-
-.hamberger-button {
-    background-color: transparent ;
-    border: none;
-    color: #222;
-    cursor: pointer;
-    display: none;
 }
 
 
@@ -484,20 +482,19 @@ strong {
 }
 
 @media screen and (max-width:799px) {
-   
-    .hamberger-button {
-        display: block;
-    }
-    .chatting-button-contents {
+    .nav-container {
         display: none;
     }
-    .search-icon {
+    .search-icon{
         display: block;
     }
-    .serch-contents {
+    .search {
         display: none;
     }
-    .header-container ul {
+    .hambuger{
+        display: block;
+    }
+    .chatting {
         display: none;
     }
     
